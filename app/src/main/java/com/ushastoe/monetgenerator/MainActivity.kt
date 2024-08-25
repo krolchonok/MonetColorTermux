@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
             
             value=${'$'}(cat colors.properties | tr -d "\\n")
             
-            if [ "${'$'}value" = "background=#1E1B19foreground=#F7EFEC" ]; then
+            if [ "${'$'}value" = "background=${foreground_light}foreground=${background_light}" ]; then
               echo -e "background=$background_light\\nforeground=$foreground_light" > colors.properties
             else
               echo -e "background=$foreground_light\\nforeground=$background_light" > colors.properties
