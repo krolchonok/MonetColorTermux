@@ -40,7 +40,7 @@ class MainActivity : ComponentActivity() {
             echo "alias sw='~/.termux/DayNightSwitch.sh'" >> ~/.zshrc
             
             clear
-            
+            source ~/.zshrc
             echo "Скрипт установлен, напишите sw, чтобы поменять тему"
         """.trimIndent()
         copyTextToClipboard(this, textForCopy)
