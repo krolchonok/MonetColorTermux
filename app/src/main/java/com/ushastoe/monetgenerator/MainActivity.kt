@@ -36,7 +36,7 @@ class MainActivity : ComponentActivity() {
             fi
             
             termux-reload-settings' >  ~/.termux/DayNightSwitch.sh
-            
+            chmod +x ~/.termux/DayNightSwitch.sh
             echo "alias sw='~/.termux/DayNightSwitch.sh'" >> ~/.zshrc
             
             clear
